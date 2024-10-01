@@ -118,5 +118,9 @@ We can indeed notice that the hdbscan labels are not accurate.
 
 - Cluster 2 : customers subscribing to DSL internet services but no phone service, paying between 0 and USD80 per month, with the majority of customers paying between USD30 and USD50. They have about 25% chance of churn.
 
+### General Insights & Business actions
+
+
+
 ### Tableau link (WIP)
 https://public.tableau.com/app/profile/lucie.stenger/viz/Tableau_Telco_customers/SummaryDashboard?publish=yes
