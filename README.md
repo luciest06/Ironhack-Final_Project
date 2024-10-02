@@ -50,27 +50,30 @@ Clients are more likely to churn if:
 - Null Hypothesis (H₀): Customers who have been using Telco’s services for over one year are equally likely to churn as those who have been using it for less than or equal to one year.
 - Alternative Hypothesis (H₁): Customers who have been using Telco’s services for over 1 year are less likely to churn.
 
-*Chi-Square Statistic: 708.78273968122
-P-Value: 3.68007400698092e-156*
-
+```
+Chi-Square Statistic: 708.78273968122
+P-Value: 3.68007400698092e-156
+```
 We reject the null hypothesis. Customers who have been using Telco's services for over one year are less likely to churn.
 
 #### Customers with month-to-month contracts are more likely to churn
 - Null Hypothesis (H₀): Customers with month-to-month contracts are equally likely to churn as those with other types of contracts.
 - Alternative Hypothesis (H₁): Customers with month-to-month contracts are more likely to churn.
 
-*Chi-Square Statistic: 1153.9716611093477
-P-Value: 6.147585925549194e-253*
-
+```
+Chi-Square Statistic: 1153.9716611093477
+P-Value: 6.147585925549194e-253
+```
 We reject the null hypothesis. Customers with month-to-month contracts are more likely to churn.
 
 #### Senior citizens are more likely to churn than non-senior citizens
 - Null Hypothesis (H₀): Senior citizens are equally likely to churn as non-senior citizens.
 - Alternative Hypothesis (H₁): Senior citizens are more likely to churn than non-senior citizens.
 
-*Z-Statistic: 12.663022223987696
-P-Value: 9.477903507376036e-37*
-
+```
+Z-Statistic: 12.663022223987696
+P-Value: 9.477903507376036e-37
+```
 We reject the null hypothesis. Senior citizens are more likely to churn.
 
 ### Clustering Algorithms
@@ -80,24 +83,26 @@ We reject the null hypothesis. Senior citizens are more likely to churn.
 ##### 2. Standardisation of numerical data
 ##### 3. Dimensionality reduction method
    - Testing relevancy of PCA method
-PCA may not be optimal as the first two components explain only  0.38 of the variance, which is less than 80%.
+> PCA may not be optimal as the first two components explain only  0.38 of the variance, which is less than 80%.
 (show PCA 2D graph)
 
    - Testing relevancy of Isomap method
-Isomap method seems to be more relevant than PCA for the 2D projection as we discovered a 3rd cluster.
+> Isomap method seems to be more relevant than PCA for the 2D projection as we discovered a 3rd cluster.
 (show Isomap 2D graph)
 
 ##### 4. Clustering algorithm
     - Testing relevancy of K-means algorithm
-Testing visually with elbow method and scatter plot 
+> Testing visually with elbow method and scatter plot 
 (show scatter plot and elbow method)
 
 Testing with the average silhouette metric:
-*For n_clusters = 2 The average silhouette_score is : 0.6287866644619318
+```
+For n_clusters = 2 The average silhouette_score is : 0.6287866644619318
 For n_clusters = 3 The average silhouette_score is : 0.6834975292525928
 For n_clusters = 4 The average silhouette_score is : 0.5229949160215177
 For n_clusters = 5 The average silhouette_score is : 0.509927850952412
-For n_clusters = 6 The average silhouette_score is : 0.48045968416837737*
+For n_clusters = 6 The average silhouette_score is : 0.48045968416837737
+```
 
 We proved visually and with the average silhouette metric that we could analyse our dataset using 3 clusters.
 
