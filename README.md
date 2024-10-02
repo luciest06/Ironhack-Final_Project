@@ -40,8 +40,8 @@ Clients are more likely to churn if:
 - They have no dependent and no partner
 - They are a senior citizen (older than 65y)
 - They are recent customers (less than 1 year)
-- They have multiple lines (-> maybe because they will save more if they switch to a cheaper provider? could present specific offers for multiple lines)
-- They have fiber optic Internet service
+- They have multiple lines
+- They have Fiber Optic Internet service
 - They subscribe to Internet but do not subscribe to Online security, Online backup, Device protection, or Tech support services
 - Their contract is month-to-month
 - They pay via electronic check
@@ -129,5 +129,6 @@ We can indeed notice that the hdbscan labels are not accurate.
 
 
 
-### Tableau link (WIP)
+### Tableau link
+
 https://public.tableau.com/app/profile/lucie.stenger/viz/Tableau_Telco_customers/SummaryDashboard?publish=yes
