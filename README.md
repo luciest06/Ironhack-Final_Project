@@ -90,12 +90,12 @@ We reject the null hypothesis. Senior citizens are more likely to churn.
 
    - Testing relevancy of Isomap method
 > Isomap method seems to be more relevant than PCA for the 2D projection as we discovered a 3rd cluster.
-(show Isomap 2D graph)
+![show PCA 2D graph](/figures/Isomap 2D Projection.png)
 
 ##### 4. Clustering algorithm
    - Testing relevancy of K-means algorithm
 > Testing visually with elbow method and scatter plot 
-(show scatter plot and elbow method)
+![show scatter plot and elbow method](/figures/Elbow_Kmeans_scatter.png)
 
 > Testing with the average silhouette metric:
 ```
@@ -110,7 +110,7 @@ We proved visually and with the average silhouette metric that we could analyse 
 
    - Testing relevancy of HDBSCAN algorithm
 >Testing visually with a scatter plot
-(show scatter plot)
+![show scatter plot](/figures/HDBSCAN_scatter.png)
 
 HDBSCAN is not the optimal algorithm here as it did not identify the 3 clusters, which are however clearly defined on the graph.
 We can indeed notice that the hdbscan labels are not accurate.
