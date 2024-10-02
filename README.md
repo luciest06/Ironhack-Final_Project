@@ -94,7 +94,7 @@ We reject the null hypothesis. Senior citizens are more likely to churn.
 
 ##### 4. Clustering algorithm
    - Testing relevancy of K-means algorithm
-> Testing visually with elbow method and scatter plot 
+> Testing visually with elbow method and scatter plot:
 ![show scatter plot and elbow method](/figures/Elbow_Kmeans_scatter.png)
 
 > Testing with the average silhouette metric:
@@ -109,7 +109,7 @@ For n_clusters = 6 The average silhouette_score is : 0.48045968416837737
 We proved visually and with the average silhouette metric that we could analyse our dataset using 3 clusters.
 
    - Testing relevancy of HDBSCAN algorithm
->Testing visually with a scatter plot
+>Testing visually with a scatter plot:
 ![show scatter plot](/figures/HDBSCAN_scatter.png)
 
 HDBSCAN is not the optimal algorithm here as it did not identify the 3 clusters, which are however clearly defined on the graph.
