@@ -1,4 +1,4 @@
-# Ironhack-Final_Project
+# Ironhack - Final Project
 # Churn Analysis in Subscription Services
 
 
@@ -90,7 +90,7 @@ We reject the null hypothesis. Senior citizens are more likely to churn.
 
    - Testing relevancy of Isomap method
 > Isomap method seems to be more relevant than PCA for the 2D projection as we discovered a 3rd cluster.
-![show PCA 2D graph](/figures/Isomap 2D Projection.png)
+![show PCA 2D graph](/figures/Isomap_2D_Projection.png)
 
 ##### 4. Clustering algorithm
    - Testing relevancy of K-means algorithm
