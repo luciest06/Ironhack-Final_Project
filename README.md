@@ -9,6 +9,16 @@ Dataset Name: Telco Customer Churn
 Description: This dataset provides information about customers from a telecom company, including customer demographics, account information, services subscribed (e.g., internet, phone), and whether they churned. It includes categorical and numerical features.
 
 Features details:
+
+| Feature | Description |
+| --- | --- |
+| CustomerID | A unique ID that identifies each customer |
+| Gender | The customer’s gender: Male, Female |
+| Senior Citizen | Indicates if the customer is 65 or older: 1 if Yes, 0 if No. |
+| Partner | Indicates if the customer has a partner: Yes, No. |
+
+
+
 - CustomerID: A unique ID that identifies each customer.
 - Gender: The customer’s gender: Male, Female.
 - Senior Citizen: Indicates if the customer is 65 or older: 1 if Yes, 0 if No.
@@ -91,11 +101,11 @@ We reject the null hypothesis. Senior citizens are more likely to churn.
 (show Isomap 2D graph)
 
 ##### 4. Clustering algorithm
-    - Testing relevancy of K-means algorithm
+   - Testing relevancy of K-means algorithm
 > Testing visually with elbow method and scatter plot 
 (show scatter plot and elbow method)
 
-Testing with the average silhouette metric:
+> Testing with the average silhouette metric:
 ```
 For n_clusters = 2 The average silhouette_score is : 0.6287866644619318
 For n_clusters = 3 The average silhouette_score is : 0.6834975292525928
@@ -106,8 +116,8 @@ For n_clusters = 6 The average silhouette_score is : 0.48045968416837737
 
 We proved visually and with the average silhouette metric that we could analyse our dataset using 3 clusters.
 
-      - Testing relevancy of HDBSCAN algorithm
-Testing visually with a scatter plot
+   - Testing relevancy of HDBSCAN algorithm
+>Testing visually with a scatter plot
 (show scatter plot)
 
 HDBSCAN is not the optimal algorithm here as it did not identify the 3 clusters, which are however clearly defined on the graph.
