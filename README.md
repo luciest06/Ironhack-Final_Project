@@ -86,7 +86,7 @@ We reject the null hypothesis. Senior citizens are more likely to churn.
 ##### 3. Dimensionality reduction method
    - Testing relevancy of PCA method
 > PCA may not be optimal as the first two components explain only  0.38 of the variance, which is less than 80%.
-[show PCA 2D graph](/figures/PCA_2D_Projection.png)
+![show PCA 2D graph](/figures/PCA_2D_Projection.png)
 
    - Testing relevancy of Isomap method
 > Isomap method seems to be more relevant than PCA for the 2D projection as we discovered a 3rd cluster.
