@@ -127,6 +127,21 @@ We can indeed notice that the hdbscan labels are not accurate.
 
 ### General Insights & Business actions
 
+#### Churn prevention
+
+**Cluster 0**: Retain customers with specific offers on additional internet service if using Fiber Optic, especially Online Backup and device protection. Intensify these offers in the first year of subscription.
+
+**Cluster 2**: Special offer on Tech Support. 
+
+#### Loyalty program
+
+**Cluster 1**: Reward customers to maintain engagement.
+
+#### Upselling
+
+**All clusters**: Run incentive to subscribe to multiple telephone line. 
+
+**Cluster 1**: Offer service upgrades, such as internet services.
 
 
 ### Tableau link
