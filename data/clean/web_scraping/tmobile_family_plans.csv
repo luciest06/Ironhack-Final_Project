@@ -1,0 +1,21 @@
+Plan,Lines,Price per Line,Total Monthly Price,Carrier_ID
+Essentials,2 lines,$45/line,$90/month,2
+Essentials,3 lines,$30/line,$90/month,2
+Essentials,4 lines,$25/line,$100/month,2
+Essentials,5 lines,$24/line,$120/month,2
+Magenta,2 lines,$60/line,$120/month,2
+Magenta,3 lines,$46.67/line,$140/month,2
+Magenta,4 lines,$40/line,$160/month,2
+Magenta,5 lines,$36/line,$180/month,2
+Magenta Max,2 lines,$70line,$140/month,2
+Magenta Max,3 lines,$56.67/line,$170/month,2
+Magenta Max,4 lines,$50/line,$200/month,2
+Magenta Max,5 lines,$46/line,$230/month,2
+Go5G,2 lines,$70/line,$140/month,2
+Go5G,3 lines,$56.67/line,$140/month,2
+Go5G,4 lines,$38.75/line,$155/month,2
+Go5G,5 lines,$36/line,$180/month,2
+Go5G Plus,2 lines,$75/line,$150/month,2
+Go5G Plus,3 lines,$50/line,$150/month,2
+Go5G Plus,4 lines,"$46,25/line",$185/month,2
+Go5G Plus,5 lines,$44/line,$220/month,2
