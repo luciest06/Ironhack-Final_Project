@@ -1,0 +1,109 @@
+openapi: 3.0.3
+info:
+  title: API - Customer Churn in Telecom - Analysis Project
+  description: |-
+    This API exposes the project's dataset. It is a mix of two data sources:
+    * The [Telco customer churn dataset](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+    * Scraped data from [Whistleout.com](https://www.whistleout.com/)
+    
+    ***
+    PATHS
+    
+    **/carrier/{Carrier_ID}:**
+    * summary: Get a carrier by its ID
+    * description: Return information on the carrier's name, internet categories and plans available.
+    * parameters: 
+      * Carrier_ID
+        * description: ID of the carrier
+        * example: 3
+        * required: true
+      
+    **/cluster:**
+    * summary: Get all customers
+    * description: Return all the information about a customer including its cluster.
+    * parameters:
+      * page
+        * description: Index of the page (used for pagination)
+        * example: 0
+      * page_size
+        * description: Number of customers per page (used for pagination)
+        * example: 10       
+      * cluster
+        * description: Which cluster and related customers to display
+        * example: 1
+      * gdpr
+        * description: Whether or not to include customer personal data (0 will not include them, 1 will include them)
+        * example: 0
+        
+        
+    **responses:**
+    * '200': OK
+    * '404': Not found
+    * '401': Unauthorized
+    * '500': Internal server error
+    
+  contact:
+    email: lucie.stenger@gmail.com
+
+  version: 1.0.0
+paths:
+  /carrier/{Carrier_ID}:
+    get:
+      summary: Get a carrier by its ID
+      description: Return information on the carrier's name, internet categories and plans available.
+      parameters:
+        - name: Carrier_ID
+          in: path
+          description: ID of the carrier
+          example: 3
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+        '404':
+          description: Movie not found
+        '401':
+          description: Unauthorized
+        '500':
+          description: Internal server error
+
+  /cluster:
+    get:
+      summary: Get all customers
+      description: Return all the information about a customer including its cluster.
+      parameters:
+        - name: page
+          in: query
+          example: 0
+          description: Index of the page (used for pagination)
+          schema:
+            type: integer
+        - name: page_size
+          in: query
+          example: 10
+          description: Number of customers per page (used for pagination)
+          schema:
+            type: integer
+        - name: cluster
+          in: query
+          example: 1
+          description: Which cluster and related customers to display
+          schema:
+            type: integer
+        - name: gdpr
+          in: query
+          example: 0
+          description: Whether or not to include customer personal data (0 will not include them, 1 will include them)
+          schema:
+            type: integer           
+      responses:
+        '200':
+          description: OK
+        '401':
+          description: Unauthorized
+        '500':
+          description: Internal server error
+
+        
